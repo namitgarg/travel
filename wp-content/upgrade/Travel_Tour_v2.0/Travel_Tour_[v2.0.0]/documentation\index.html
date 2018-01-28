@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel Tour Document</title>
+	
+	<link rel="stylesheet" href="style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css" type="text/css" media="all">
+	<link rel="stylesheet" href="plugins/syntaxhighlighter/shCore.css" type="text/css" media="all">
+	<link rel="stylesheet" href="plugins/syntaxhighlighter/shThemeDefault.css" type="text/css" media="all">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700" rel="stylesheet" type="text/css">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+	<div class="body-wrapper">
+		<!-- nav area -->
+		<div class="nav-wrapper">
+			<div class="logo-wrapper">
+				<h1 class="logo-title">Travel Tour</h1>
+				<div class="logo-caption">Theme Document By Goodlayers</div>
+			</div>
+			<div class="nav" id= "nav" >
+				<div class="nav-item active"><a class="main-nav-item"><i class="icon-gear"></i>Getting Start</a>
+					<div class="sub-nav">
+						<a class="sub-nav-item active" href="#introduction">Introduction</a>
+						<a class="sub-nav-item" href="#install-theme">Install Theme</a>
+						<a class="sub-nav-item" href="#install-plugins">Install Plugins</a>
+						<a class="sub-nav-item" href="#import-demo" >Import Demo Site</a>
+						<a class="sub-nav-item" href="#theme-update" >Theme Updates</a>
+						<a class="sub-nav-item" href="#child-theme" >Child Theme / Theme Customization</a>
+
+					</div>
+				</div>
+				<div class="nav-item"><a class="main-nav-item"><i class="icon-tint"></i>Theme Settings</a>
+					<div class="sub-nav">
+						<a class="sub-nav-item" href="#theme-option">Theme Option / Customize</a>
+						<a class="sub-nav-item" href="#thumbnail-size">Thumbnail Size</a>
+						<a class="sub-nav-item" href="#skin-settings">Skin Settings</a>
+						<a class="sub-nav-item" href="#upload-custom-font">Upload Custom Font</a>
+					</div>
+				</div>
+				<div class="nav-item"><a class="main-nav-item"><i class="icon-hand-up"></i>Creating Header / Footer</a>
+					<div class="sub-nav">
+						<a class="sub-nav-item" href="#header-logo">Header / Logo</a>
+						<a class="sub-nav-item" href="#create-menu">Create Menu</a>
+						<a class="sub-nav-item" href="#onepage-menu">Managing One-Page</a>
+						<a class="sub-nav-item" href="#footer-copyright">Footer / Copyright</a>
+					</div>
+				</div>
+				<div class="nav-item"><a class="main-nav-item"><i class="icon-copy"></i>Pages / Sidebar</a>
+					<div class="sub-nav">
+						<a class="sub-nav-item" href="#creating-homepage">Creating Page / Set The Homepage</a>
+						<a class="sub-nav-item" href="#creating-blog">Creating Blog</a>
+						<a class="sub-nav-item" href="#creating-portfolio">Creating Portfolio</a>
+						<a class="sub-nav-item" href="#metro-layout">Metro Layout</a>
+						<a class="sub-nav-item" href="#creating-personnel">Creating Personnel</a>
+						<a class="sub-nav-item" href="#managing-sidebar">Managing Sidebar</a>
+						<a class="sub-nav-item" href="#sidebar-payment">Setting Sidebar In Payment Page</a>
+					</div>
+				</div>
+				<div class="nav-item"><a class="main-nav-item"><i class="icon-copy"></i>Page Buider</a>
+					<div class="sub-nav">
+						<a class="sub-nav-item" href="#page-builder">Page Builder</a>
+						<a class="sub-nav-item" href="#page-builder-wrapper">Page Builder Wrapper</a>
+						<a class="sub-nav-item" href="#page-builder-element">Page Builder Element</a>
+						<a class="sub-nav-item" href="#page-builder-template">Page Builder Template</a>
+						<a class="sub-nav-item" href="#page-builder-custom-template">Page Builder Custom Template</a>
+					</div>
+				</div>
+				<div class="nav-item"><a class="main-nav-item"><i class="icon-picture"></i>Plugins / Sliders</a>
+					<div class="sub-nav">
+						<a class="sub-nav-item" href="#revolution-slider">Revolution Slider</a>
+						<a class="sub-nav-item" href="#layer-slider">Layer Slider</a>
+						<a class="sub-nav-item" href="#master-slider">Master Slider</a>
+						<a class="sub-nav-item" href="#contact-form7">Contact Form 7</a>
+						<a class="sub-nav-item" href="#translation">Translation</a>
+					</div>
+				</div>
+				<div class="nav-item"><a class="main-nav-item"><i class="icon-question-sign"></i>Shortcode / Snippet Code</a>
+					<div class="sub-nav">
+						<a class="sub-nav-item" href="#shortcode">Shortcode</a>
+						<a class="sub-nav-item" href="#snippet-code">Snippet Code</a>
+					</div>
+				</div>
+				<div class="nav-item"><a class="main-nav-item"><i class="icon-question-sign"></i>Etc.</a>
+					<div class="sub-nav">
+						<a class="sub-nav-item" href="#icon-list">Icon List</a>
+						<a class="sub-nav-item" href="#social-network-api">Social Network API</a>
+						<a class="sub-nav-item" href="#setting-up-ssl">Setting UP SSL On Your Site</a>
+						<a class="sub-nav-item" href="#total-cache">W3 Total Cache Setting</a>
+					</div>
+				</div>
+				<div class="nav-item"><a class="main-nav-item"><i class="icon-plane"></i>Tour Master</a>
+					<div class="sub-nav">
+						<a class="sub-nav-item" href="#creating-tour">Creating Tour</a>
+						<a class="sub-nav-item" href="#creating-coupon">Creating Coupon</a>
+						<a class="sub-nav-item" href="#setup-the-payment">Setup the Payment</a>
+						<a class="sub-nav-item" href="#creating-login">Creating Login/Registration Page</a>
+						<a class="sub-nav-item" href="#setting-tour-search-header">Setting up header in tour search result</a>
+						<a class="sub-nav-item" href="#configuring-an-email-message">Configuring an Email Message</a>
+						<a class="sub-nav-item" href="#payment-api">Payment API</a>
+						<a class="sub-nav-item" href="#creating-destination">Creating Destination(region) Layout</a>
+						<a class="sub-nav-item" href="#creating-referral">Creating Referral Tour(link to external source)</a>
+						<a class="sub-nav-item" href="#creating-review">How create customer's review manually?</a>
+						<a class="sub-nav-item" href="#itinerary-map">Creating Itinerary Google Map</a>
+					</div>
+				</div>
+			</div>
+		</div> 
+		
+		<!-- content area -->
+		<div class="content-wrapper" id="content">
+			<div class="need-support"><a href="http://support.goodlayers.com/"><i class="icon-comments"></i>Need Support</a></div>
+			
+			<!-- Getting start -->
+			<div class="content-section" id="introduction" style="display: block;" >
+				<h3>Introduction</h3> 
+				Thank you very much for choosing our theme. We truly appreciate and really hope that you'll enjoy our theme! <br/>
+				<strong>If you like this theme, Please support us by rating us 5 stars (<a href="images/getting-start/how-to-rate.jpg"> How to rate? </a>)</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><br/><br/>
+				
+				<h5>Need Support?</h5>
+				If you have any questions regarding to theme issues, please submit a ticket at <a href="http://support.goodlayers.com/" target="_blank">http://support.goodlayers.com/</a> (Registration Required)
+				<br><br>	
+
+				<h5>Video Tutorials</h5>
+				<div class="message-box">
+					<i class="icon-info-sign"></i>
+					<span class="content">You can change video quality to 720p(HD) by clicking at the gear icon at the bottom right of the video.</span>
+				</div>				
+				Installation<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/9wJqiUN6xpk" frameborder="0" allowfullscreen></iframe>
+				<br><br>Importing Demo<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/licSuqJVcto" frameborder="0" allowfullscreen></iframe>
+				<br><br>Creating Tour List<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/PdxUwpe9rJU" frameborder="0" allowfullscreen></iframe>
+				<br><br>Tour Management System Walkthrough (Demonstrate how the payment works)<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/HODmbzOT288" frameborder="0" allowfullscreen></iframe>
+				<br><br>Creating Portfolio<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/XFrtHJuPW_4" frameborder="0" allowfullscreen></iframe>
+				<br><br>Creating Personnel<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/MwFxxSlYuAA" frameborder="0" allowfullscreen></iframe>
+				<br><br>Creating Blog<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/fqcdMzTjvrE" frameborder="0" allowfullscreen></iframe>
+				<br><br>Goodlayers Page Builder<br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/N0haJbDM8ac" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="content-section" id="install-theme" >
+				<h3>Theme Installation</h3> 
+				Once you purchase the theme from themeforest, you'll be able to <a href="images/getting-start/download-file-type.jpg" >load 2 file type</a>.
+				<ol>
+					<li>All Files and documentation</li>
+					<li>Installable Wordpress Theme File</li>
+				</ol>
+				If you select to download all files and documentation ( the zip file name will be themeforest-xxx-xxxxx.zip ), you have to extract it out ( to get traveltour.zip file ) before installing it to wordpress system. <br>
+				<h5>Install theme via Wordpress Dashboard</h5>
+				<img src="images/getting-start/theme-installation.jpg" width="450" />
+				<ol>
+					<li>Go to "Appearance > Theme" section</li>
+					<li>Click "Add New" and select the "Upload" option </li>
+					<li>Upload the "traveltour.zip" file</li>
+					<li>All Done :)</li>
+				</ol>
+				<h5>Install theme via FTP</h5>
+				<ol>
+					<li>Access to the file on your server using hosting control panel or ftp editor application</li>
+					<li>Go to "wp-content/themes" folder on your wordpress installation</li>
+					<li>Extract the zip file and put the "traveltour" folder there</li>
+					<li>Go to "Appearance > Theme" section to activate the theme</li>
+					<li>All Done :)</li>
+				</ol>
+			</div>		
+			<div class="content-section" id="install-plugins" >
+				<h3>Plugins Installation</h3> 
+				After you install and activate the theme, the "goodlayers-core" plugin will automatically installed and redirect you to the "Getting Start" page. You may click the "Install Required Plugins" button to proceed the plugin installation.<br><br>
+				<img src="images/getting-start/getting-start.jpg" width="950" /><br><br>
+				If the "Goodlayers > Getting Start" section is not showing up, you may manually go to "Appearance > Install Plugins" section to install the necessary plugins.<br><br>
+				<img src="images/getting-start/install-plugins.jpg" width="950" />
+			</div>
+			<div class="content-section" id="import-demo" >
+				** If you want to reset your website to initial state for import process, you may check <a href="http://support.goodlayers.com/document/reset-website/" target="_blank" >this article</a>
+				<h3>Importing Demo Content</h3>
+				After you finished installing theme and plugins, go to "Goodlayers > Getting Start / Import" section, you'll see an "Import Demo" tab.<br><Br>
+				<img src="images/getting-start/import-demo.jpg" width="950" /><br><br>
+				Selecting the site you need to import from the list and click "Start Import Demo" button, then wait a few minute and it's done !!<br><br>
+				<img src="images/getting-start/import-demo2.jpg" width="950" /><br><br>
+				If something is missing, you can start the import process again and it'll continue where it left off.<br>
+				You can also check the server status tab to see the necessary server settings for the import process as well.<br><br>
+				<img src="images/getting-start/server-status.jpg" width="950" /><br><br>
+			</div>	
+			<div class="content-section" id="theme-update" >
+				<h3>Theme Updates</h3>
+				To enable the "Automatic Updates" feature, please go to "Goodlayers > Getting Start / Import" section, then, choose the "Get Automatic Updats" tab.<br><br>
+				<img src="images/getting-start/get-automatic-updates.jpg" width="950" /><br><br>
+				After clicking the "Get Envato Plugin Now" button, the "Envato Market" plugin will automatically installed and redirect you to the authentication page. <br><br>
+				Try following the instruction on the "Envato Market" page to add the item you purchased to get automatic updates. <br><br>
+				<img src="images/getting-start/envato-market.jpg" width="950" /><br><br>
+				If there're update available for the theme, you can click the update button here ( or at the "Appearance > Themes" area ) to update the theme.<br><br>
+				<img src="images/getting-start/theme-update.jpg" width="950" /><br><br>
+				After you update the theme, you may check if there're any plugin update at the the "Goodlayers > Install Plugins" section as well.<Br><br>
+				<img src="images/getting-start/plugin-update.jpg" width="950" /><br><br>
+			</div>	
+			<div class="content-section" id="child-theme" >
+				<h3>Child Theme & Theme Customization</h3>
+				<h5>To create child theme</h5>
+				If you need to customize the theme code, of course, you do not want to modify it everytime you update the theme. That's where the child theme take action.<br><br>
+				We provided the child theme for you within the zip file you downloaded from themeforest. All you need to do is uploading the "traveltour-child.zip" file to "Appearance > Themes" section and activate it. ( just like how you upoad the theme )<br><br>
+				You can also learn more about child theme creation <a href="http://codex.wordpress.org/Child_Themes" target="_blank" >here</a><br><br>
+				<h5>Adding / modify php code</h5>
+				Our theme wrap every function with if( !function_exists('some_function') ) command. If you need to modify any function, just declare it in the function.php file of the child theme and it'll overwrite the existing one.<br><br>
+				However, you need to use <a href="http://codex.wordpress.org/Plugin_API/Hooks" target="_blank" >hook and action</a> to modify the plugins since the plugin is loaded before the theme files.
+				<h5>Adding new style / script</h5>
+				You can add custom css / javascript code directly to the "Customize ( or Theme Option ) > Miscellaneous > Custom Css/Js" area.
+				If you only need to add some style / script to the site, there're no need to create the child theme. We provided the custom input option which you can see the changes live !! <br><br>
+				<h6>Customize</h6>
+				<img src="images/getting-start/custom-css-js2.jpg" width="950" /><br><br>
+				<h6>Theme Option</h6>
+				<img src="images/getting-start/custom-css-js.jpg" width="950" /><br><br>
+			</div>	
+
+			<!-- Theme Settings -->
+			<div class="content-section" id="theme-option" >
+				<h3>Theme Option / Customize</h3>
+				Theme option / Customize area is one of the main feature in our theme. They give you abilities to made a changes to your site without touching a single line of code.<br><br>
+				"Customize" give you an ability to live preview changes on the site while "Theme Option" give you an ability to search through the options and do some specific task ( Add thumbnail size, Add Skin and Upload Custom font ) which will be explained later. 
+
+				<h6>Customize</h6>
+				You can go to theme customize at "Appearance > Customize" section from wordpress admin area<br><br>
+				<img src="images/theme-option/customize.jpg" width="950" /><br><br>
+				<img src="images/theme-option/customize2.jpg" width="950" /><br><br>
+				<h6>Theme Option</h6>
+				You can go to theme option at "Goodlayers" section in wordpress admin area<br><br>
+				<img src="images/theme-option/theme-option.jpg" width="950" /><br><br>
+			</div>
+			<div class="content-section" id="thumbnail-size" >
+				<h3>Thumbnail Size</h3>
+				You can add custom image size to uses in page builder and themes by going to "Theme option > Miscellaneous > Thumbnail Sizing" section. <br><br>
+				<img src="images/theme-option/thumbnail-sizing.jpg" width="950" /><br><br>
+				New tumbnail size only effects the newly uploaded images, so after you successfully added the image size, you may use the '<a href="http://wordpress.org/plugins/regenerate-thumbnails/" target="_blank" >Regenerate Thumbnail</a>' plugin to generate the thumbnail for old images as well.<br><br> 
+				<div class="message-box">
+					The image will be cropped to the destined size ONLY when the uploaded image is larger than the defined size.
+					Filling 0 will force the image to crop at the same proportion ( eg. 500x0 will crop the image width to 500 while the height is in the same proportional of the orignal images. )
+				</div>
+			</div>
+			<div class="content-section" id="skin-settings" >
+				<h3>Skin Settings</h3>
+				<h5>Creating Skin</h5>
+				Skin gives you an ability to change the elements color that resides in the wrapper / column ( Page builder items ). You can create new skin at the "Theme option > Color > Skin" area.<br><br>
+				<img src="images/theme-option/skin.jpg" width="950" /><br><br>
+				<h5>Assigning Skin</h5>
+				After you created the skin, you can assign it at the page builder "Wrapper" and "Column" item. Try clicking edit while you hovering over the item, then, select the skin tab for this.<br><br> 
+				<img src="images/theme-option/assign-skin.jpg" width="950" /><br><br>
+				<img src="images/theme-option/assign-skin2.jpg" width="950" /><br><br>
+			</div>	
+			<div class="content-section" id="upload-custom-font" >
+				<h3>Upload Custom Font</h3>
+				You can upload custom font at the "Theme option > Typography > Upload font" section. Both EOT and TTF font need to be supplied to make the font support across all devices. <br><br> 
+				You can generate the font file <a href="https://www.fontsquirrel.com/tools/webfont-generator" target="_blank">here</a><br><br>
+				<img src="images/theme-option/custom-font.jpg" width="950" /><br><br>
+			</div>			
+			
+			<!-- Creating Header / Footer -->
+			<div class="content-section" id="header-logo" >
+				<h3>Header / Logo</h3>
+				You can set the header style in the "Customize" page. Header area consists of 5 section under the general tab.<br><br>
+				<img src="images/header-footer/header-option.jpg" width="950" /><br><br>
+				<h5>Top Bar</h5>
+				Topbar is an area that resides above logo & navigation. <br><br>
+				<img src="images/header-footer/top-bar.jpg" width="950" /><br><br>
+				<h5>Header Style</h5>
+				Header is an area that includes logo and navigation. You can select "header style" in header tab, then set the logo / navigation spaces from the corresponding tabs.<br><br>
+				<img src="images/header-footer/header.jpg" width="950" /><br><br>
+			</div>
+			<div class="content-section" id="create-menu" >
+				<h3>Creating Menu</h3>
+				<h5>1.) Adding menu items</h5>
+				You can create menu by going to "Appearance > Menu" section.<br><br>
+				<img src="images/header-footer/menu.jpg" width="950" /><br><br>
+				<h5>2.) Mega Menu ( <a href="images/header-footer/mega-menu.jpg" >see screenshot</a> )</h5>
+				Mega menu consists of 3 menu levels.
+				<ol>
+					<li>First Level : use to defind a mega menu supported</li>
+					<li>Second Level : acts as a column of the mega menu items</li>
+					<li>Third Level : display the menu item lists</li>
+				</ol>
+				You may follow the steps on below screenshot to create mega menu<Br><br> 
+				<img src="images/header-footer/mega-menu2.jpg" width="950" /><br><br>
+				<img src="images/header-footer/mega-menu3.jpg" width="950" /><br><br>
+				<img src="images/header-footer/mega-menu4.jpg" width="950" /><br><br>
+				<h5>3.) Assign Menu</h5>
+				After you finished creating the menu, try assigning it to various themes locations at the "Manage Location" section.<br><br>
+				<img src="images/header-footer/theme-locations.jpg" width="950" /><br><br>
+			</div>
+			<div class="content-section" id="onepage-menu" >
+				<h3>One-Page Menu</h3>
+				One-page website can be created using page builder. By defining an ID to each section of the page, you can create a menu which scroll to the individual section.
+				<h5>1.) Defining ID to each section of the page.</h5>
+				Try editing any item to fill the ID to the element.<br><br>
+				<img src="images/header-footer/one-page.jpg" width="950" /><br><br>
+				<img src="images/header-footer/one-page2.jpg" width="950" /><br><br>
+				<h5>2.) Creating the menu anchor</h5>
+				At the "Appearance > Menu" area, try creating custom link menu item with #id as URL.<br><br>
+				<img src="images/header-footer/one-page3.jpg" width="950" /><br><br>
+				Keep doing this with another section in page builder. If you need 4 menu, you have to separate your page builder to 4 sections and create 4 menu anchors.<br><br>
+				<h5>3.) Creating bullet anchor ( <a href="images/header-footer/bullet-anchor.jpg" >see screenshot</a> )</h5>
+				You can create the "Bullet Anchor" at the "Page Options" when you edit each page. Choosing the "Bullet Anchor" tab to add new bullet and assign #id in the same way as menu anchor. <br><br>
+				<img src="images/header-footer/bullet-anchor2.jpg" width="950" /><br><br>
+			</div>
+			<div class="content-section" id="footer-copyright" >
+				<h3>Footer / Copyright</h3>
+				The footer and copyright area can be changed at the "Customize > General > Footer / Copyright" section
+				<h5>Footer</h5>
+				You can select the layout as shown on the following screenshot<br><br>
+				<img src="images/header-footer/footer-layout.jpg" width="950" /><br><br>
+				After selecting the layout, you can assign the widget to the footer at the "Appearance > Widget" area. The widget you assigned will matched with the footer layout. ( Eg. Footer 4 will be ignored if you select the 3 column footer style )<br><br>
+				<img src="images/header-footer/footer-widget.jpg" width="950" /><br><br>
+			</div>
+			
+			<!-- Page Creation -->
+			<div class="content-section" id="creating-homepage" >
+				<h3>Creating Page & Set The Homepage</h3>
+				Go to 'Page > Add New' to create new page.<br><br>
+				<img src="images/page-creation/create-page.jpg" width="950" /><br><br>
+				You can set page sidebar, title background, caption and header slider at the "Page Option" area. ( at the very bottom of the page )<br><br>
+				<img src="images/page-creation/page-option.jpg" width="950" /><br><br>
+				You can also use "Page Builder" ( which will be explained later ) to create more advance layout as well.<br><br>
+				<img src="images/page-creation/page-builder.jpg" width="950" /><br><br>
+				<h5>Set the page as Homepage</h5>
+				Go to 'Setting > Reading' area. Choose the front page as static page and select the page you want to be homepage.<br><br>
+				<img src="images/page-creation/front-page.jpg" width="950" /><br><br>
+				<div class="message-box">
+					<i class="icon-info-sign"></i>
+					<span class="content">You have to leave the post page option blank and use blog item ( in page builder ) to create the blog page.</span>
+				</div>					
+			</div>
+			<div class="content-section" id="creating-blog" >
+				<h3>Creating Blog</h3>
+				<h5>1.) Creating New Articles</h5>
+				Go to "Post > Add New" to create new articles.<br><br>
+				<img src="images/page-creation/creating-post.jpg" width="950" /><br><br>
+				<img src="images/page-creation/creating-post2.jpg" width="950" /><br><br>
+				<h5>2.) Creating Blog Item ( list of articles )</h5>
+				Create new page at "Page > Add New". At the page builder area, add the "Blog Item" then, publish the page.<br><br>
+				<img src="images/page-creation/blog-item.jpg" width="950" /><br><br>
+				<img src="images/page-creation/blog-item2.jpg" width="950" /><br><br>
+				<h5>3.) Post Format</h5>
+				Post format give you an ability to style the post in different ways. You can see an example of the post format style <a href="http://demo.goodlayers.com/traveltour/blog-full-with-post-format/" target="_blank">here</a>.<br><br>
+				First, you need to select the post format option.<br><br>
+				<img src="images/page-creation/post-format.jpg" /><br><br>
+				Here's the explanation of the each post format type. 
+				<ol>
+					<li>Standard : Feature image will be shown above post title | <a href="images/page-creation/post-format-standard.jpg" >screenshot1</a> | <a href="images/page-creation/post-format-standard2.jpg" >screenshot2</a></li>
+					<li>Image : Place the url of the image at the top of the post and it'll show up above the post title | <a href="images/page-creation/post-format-image.jpg" >screenshot1</a> | <a href="images/page-creation/post-format-image2.jpg" >screenshot2</a></li>
+					<li>Gallery : Place the gallery shortcode at the top of the content and it'll show a slideshow above post title | <a href="images/page-creation/post-format-gallery.jpg" >screenshot1</a> | <a href="images/page-creation/post-format-gallery2.jpg" >screenshot2</a></li>
+					<li>Aside : All content in aside post format will shows like this | <a href="images/page-creation/post-format-aside.jpg" >screenshot1</a> </li>
+					<li>Link : Place link url at the top of the content and it'll link the title of the post to the link you want | <a href="images/page-creation/post-format-link.jpg" >screenshot1</a> | <a href="images/page-creation/post-format-link2.jpg" >screenshot2</a></li>
+					<li>Quote : Place quote html at the top and the rest content will shows as quote author | <a href="images/page-creation/post-format-quote.jpg" >screenshot1</a> | <a href="images/page-creation/post-format-quote2.jpg" >screenshot2</a></li>
+					<li>Audio : Place audio url or shortcode at the top and it'll showing up above post title | <a href="images/page-creation/post-format-audio.jpg" >screenshot1</a> | <a href="images/page-creation/post-format-audio2.jpg" >screenshot2</a></li>
+					<li>Video : Place video url or shortcode at the top and it'll showing up above post title | <a href="images/page-creation/post-format-video.jpg" >screenshot1</a> | <a href="images/page-creation/post-format-video2.jpg" >screenshot2</a></li>
+				</ol>		
+			</div>
+			<div class="content-section" id="creating-portfolio" >
+				<h3>Creating Portfolio</h3>
+				You need to install the "gdlr-core-portfolio" plugin before continuing this section. You can learn more about the plugin installation at the "Getting Start > Install Plugin" section.
+				<h5>1.) Create new portfolio post.</h5>
+				Add new portfolio at the "Portfolio > Add New" section. Fill the title, category, tag as you want.<br><br>
+				<img src="images/page-creation/creating-portfolio.jpg" width="950" /><br><br>
+				<img src="images/page-creation/creating-portfolio3.jpg" width="950" /><br><br>
+				We also set the content in page builder as a default layout for portfolio for you.<br><br>
+				<img src="images/page-creation/creating-portfolio2.jpg" width="950" /><br><br>
+				<h5>2.) Creating portfolio item ( list of portfolios ).</h5>
+				Create new page at "Page > Add New". At the page builder area, add the "Portfolio Item" then, publish the page.<br><br>
+				<img src="images/page-creation/portfolio-item.jpg" width="950" /><br><br>
+				Double click or hover over the portfolio item to edit the portfolio item options.<br><br>
+				<img src="images/page-creation/portfolio-item2.jpg" width="950" /><br><br>
+			</div>
+			<div class="content-section" id="metro-layout" >
+				<h3>Metro Layout</h3>
+				"Metro" is a layout that align the element in masonry style. You can select different column width and thumbnail type for each items which result to more attractive display style.<br><br>
+				We provided the support for the metro layout on "Blog Item" and "Portfolio Items". ( You can learn more about these two elements on previous section )<br><br>
+				<img src="images/page-creation/metro-layout.jpg" width="950" /><br><br>
+				You may select the style of the "Blog Item" or "Portfolio Item" to metro style to enable the metro layout. <br><br>
+				<img src="images/page-creation/metro-layout2.jpg" width="950" /><br><br>
+				Try editing "blog/portfolio" single page which you need to the layout to be differnt. In page option area, you'll see the "Metro Layout" tab, try selecting the column and thumbnail size as you need.<br><br>
+				Selecting "Default" means to use the settings you selected in "Blog/Portfolio Item"<br><br>  
+				<img src="images/page-creation/metro-layout3.jpg" width="950" /><br><br>
+			</div>
+			<div class="content-section" id="creating-personnel" >
+				<h3>Creating Personnel</h3>
+				You need to install the "gdlr-core-portfolio" plugin before continuing this section. You can learn more about the plugin installation at the "Getting Start > Install Plugin" section.
+				<h5>1.) Create new personnel post.</h5>
+				Add new personnel at the "Personnel > Add New" section. Fill the title, category, and page option according to the personnel information.<br><br>
+				<img src="images/page-creation/creating-personnel.jpg" width="950" /><br><br>
+				Use page builder to create the content to shown in single ( individual ) personnel page.<br><br>
+				<img src="images/page-creation/creating-personnel2.jpg" width="950" /><br><br>
+				<h5>2.) Creating personnel item ( list of personnel ).</h5>
+				Create new page at "Page > Add New". At the page builder area, add the "Personnel Item" then, publish the page.<br><br>
+				<img src="images/page-creation/personnel-item.jpg" width="950" /><br><br>
+				Double click or hover over the personnel item to edit the personnel item options.<br><br>
+				<img src="images/page-creation/personnel-item2.jpg" width="950" /><br><br>
+			</div>
+			<div class="content-section" id="managing-sidebar" >
+				<h3>Managing Sidebar</h3>
+				<h5>Creating Sidebar</h5>
+				Sidebar can be created at the "Appearance > Widget" area.<br><br>
+				<img src="images/page-creation/creating-sidebar.jpg" width="950" /><br><br>
+				<h5>Assigning The Sidebar</h5>
+				After you created sidebar, you can assign it to any page/post you want in the "Page Option" area. You can also set the default sidebar for blog, archive and search page at the "Customize > General" section as well.<br><br>
+				<img src="images/page-creation/assigning-sidebar.jpg" width="950" /><br><br>
+				<img src="images/page-creation/assigning-sidebar2.jpg" width="950" /><br><br>
+			</div>
+			<div class="content-section" id="sidebar-payment" >
+				<h3>Managing Sidebar</h3>
+				<h5>Creating Sidebar</h5>
+				Sidebar can be created at the "Appearance > Widget" area.<br><br>
+				<img src="images/page-creation/creating-sidebar.jpg" width="950" /><br><br>
+				<h5>Assigning The Sidebar</h5>
+				After you created sidebar, Go to "Tour Master" panel and go to the payment section. You will see the option to select sidebar in there. Select the sidebar that you created.<br><br>
+				<img src="images/page-creation/payment-sidebar.jpg" width="950" /><br><br>
+			</div>
+			<!-- Page Buider -->
+			<div class="content-section" id="page-builder" >
+				<h3>Page Builder</h3>
+				"Page Builder" is the main feature of our theme which help you easily manage content and layout. You'll see page builder when you create page/post/portfolio/personnel post type.<br><br>
+				There're 2 main types of item in page builder. 
+				<ol>
+					<li>Wrapper item : is an item which can accept another item inside it. Wrapper item divided in to 3 types
+						<ul>
+							<li>Background Wrapper : can accept column and element item inside it</li>
+							<li>Sidebar Wrapper : is simiar to "Background Wrapper" item, but you can assign the sidebar widget to this item.</li>
+							<li>Column Wrapper : is the item that divide each row in to section. You can drag a element item inside it.</li>
+						</ul>
+					</li>
+					<li>Element item : is an item that has individual feature. Currently, there're over 40 items in our page builder and we'll continue to add more items on future updates.</li>
+				</ol>
+				Below is an explanation of the feature of the page builder.<br><br>
+				<img src="images/page-builder/page-builder.jpg" width="950" /><br><br>
+			</div>
+			<div class="content-section" id="page-builder-wrapper"  >
+				<h3>Page Builder Wrapper</h3>
+				Wrapper is an item that can contains an "Element Item" in side it. You can use it to create sections/layout/parallax background. You can find wrapper at the first tab of the page builder. Try clicking or draging the item to add it to the container area. <br><br>
+				<img src="images/page-builder/wrapper.jpg" width="950" /><br><br>
+				In live "live view mode", blue frame represents background/sidebar wrapper item, yellow frame represents column item. Hovering over the item and you'll see the tools bar for managing the wrapper item. You can use <strong>double click</strong> as a shortcut to edit each item as well.<br><br>
+				<img src="images/page-builder/wrapper2.jpg" width="950" /><br><br>
+			</div>
+			<div class="content-section" id="page-builder-element" >
+				<h3>Page Builder Element</h3>
+				"Element Item" provides an ability for you to create different item style. You can find the element item list at the second tab of the page builder. You can add the element item by clicking or dragging the element you want to the container area.<br><br>
+				<img src="images/page-builder/element-item.jpg" width="950" /><br><br>
+				Unlike wrapper, in "live view mode", you will only see the item's frame when you're hovering over them. You can <strong>double click</strong> on the item to edit the item options or hovering over the item and you'll see the tool bar for you to manage the item.<br><br>
+				<img src="images/page-builder/wrapper2.jpg" width="950" /><br><br>
+			</div>
+			<div class="content-section" id="page-builder-template" >
+				<h3>Page Builder Template</h3>
+				Template is a set of pre-built elements that was shown on the demo site. You can find it at the third tab of the page builder area. Clicking or dragging the elements to the container area to add the template items to page builder content area.<br><br>
+				The content you added will be slightly different due to the difference of "Image ID" and "skin settings" on your site <br><br>
+				<img src="images/page-builder/template.jpg" width="950" /><br><br>
+				We also provide the pre-built block which is a set of elements that we oftenly used to create the site. <br><br>
+				<img src="images/page-builder/template-block.jpg" width="950" /><br><br>
+			</div>
+			<div class="content-section" id="page-builder-custom-template" >
+				<h3>Page Builder Custom Template</h3>
+				The last section of the page buidler tab is "Custom Template". Custom Template gives you an ability to save the template you oftenly use for later uses.<br><br>
+				<img src="images/page-builder/custom-template.jpg" width="950" /><br><br>
+				To save the custom template, you need to click on the "Save Template" button on any elements.<br><br>
+				<img src="images/page-builder/save-template.jpg" width="950" /><br><br>
+				Clicking the save template at the page builder head area will save the whole page as a template.<br><br>
+				<img src="images/page-builder/save-template2.jpg" width="950" /><br><br>
+				After clicking the save button, there'll be an input box showing for you to fill the template name.<br><br>
+				<img src="images/page-builder/save-template3.jpg" /><br><br>
+				You can remove the template by clicking the close button while hovering over the template you want to remove.<br><br>
+				<img src="images/page-builder/remove-template.jpg" width="950" /><br><br>
+			</div>
+			
+			<!-- Slider -->
+			<div class="content-section" id="revolution-slider" >
+				<h3>Revolution Slider</h3>
+				<div class="message-box">
+					<i class="icon-info-sign"></i>
+					<span class="content">The purchase code for slider is not necessary. It's used for auto updater. However, the slider that's included in this theme is being used as 'Extended license', it's considered as a bonus file which doesn't support auto updater. If you need to use auto updater, you have to purchase slider's regular license separately. However, as mentioned, It's not necessary, you can still use slider that come with the theme like its regular license.</span>
+				</div>			
+				<h5>Installation</h5>
+				Revolution Slider should already be installed if you followed the instruction at "Getting Stars > Install Plugins". However, if you don't see this plugin, Go to Appearance > Install Plugins and install it from there.<br><br>
+				<h5>Import Slider Demo Content</h5>
+				1.) Go to the theme package folder and seek for the folder "Demo Stuffs".<br><br>
+				<img src="images/slider/demo-path1.jpg" /><br><br>
+				2.) Go to "Revolutions slider demo content" folder and choose the demo file that you want to use.<br><br>
+				<img src="images/slider/demo-path2.jpg" /><br><br>
+				3.) Go to 'Revolution Slider' menu on the left in your WordPress backend and click on import and import the zip file from "Revolutions slider demo content" folder in here.<br><br>
+				<img src="images/slider/revo-import-demo.jpg"  width="950" /><br><br>
+				<br/><br/>
+				<h5>Using Revolution Slider</h5>	
+				<a href="https://www.themepunch.com/revslider-doc/slider-revolution-documentation/" target="_blank">https://www.themepunch.com/revslider-doc/slider-revolution-documentation/</a><br/><br/>
+				<h5>Updating Revolution Slider</h5>
+				After you update the theme, you'll see list of plugins that's available for update. ( If you already disable the notification bar, you can check the "Appearance > Install Plugins" section instead. )<br><br>
+				<img src="images/slider/plugin-update.jpg" width="950" /><br><br>
+				Clicking the update button and wait for the installation. After that, activate the plugin and it's done !!<br><br>
+				<img src="images/slider/update-revolution-slider.jpg" width="950" /><br><br>
+			</div>
+			<div class="content-section" id="layer-slider" >
+				<h3>Layer Slider</h3>
+				<div class="message-box">
+					<i class="icon-info-sign"></i>
+					<span class="content">The purchase code for slider is not necessary. It's used for auto updater. However, the slider that's included in this theme is being used as 'Extended license', it's considered as a bonus file which doesn't support auto updater. If you need to use auto updater, you have to purchase slider's regular license separately. However, as mentioned, It's not necessary, you can still use slider that come with the theme like its regular license.</span>
+				</div>	
+				Since "Layer Slider" isn't included within the "Appearance > Install Plugins" tab, you need to follow the instruction below for the plugin installation.
+				<h5>Install Plugin</h5>
+				1.) In theme package folder, go to "Additional Plugins" folder and you will see the file in there.<br><br>
+				<img src="images/slider/slider-path.jpg" /><br><br>
+				2.) Go to "Plugin > Add New > Upload Plugins" and upload the file from 1.)<br><Br>
+				<img src="images/slider/add-new-plugin.jpg" width="950" /><br><br>
+				<h6>*Please note that we don't have any demo slides content with this slider. Demo slides content only come with Revolution Slider plugin. This plugin is considered as a bonus file.</h6>
+				<br/><br/>
+				<h5>Using Layer Slider</h5>	
+				<a href="https://support.kreaturamedia.com/docs/layersliderwp/documentation.html" target="_blank">https://support.kreaturamedia.com/docs/layersliderwp/documentation.html</a><br/><br/>
+				<h5>Updating the Layer Slider</h5>
+				1.) Download the newer version of theme package from Themeforest, extract it and go to folder 'Additional Plugins'<br><br>
+				2.) Extract the file 'layersliderwp-x.x.x.installable.zip' and now you will get the folder 'LayerSlider'. <br><br>
+				3.) Access to your site via FTP and go to the path 'wp-content/plugins' <br><br>
+				4.) Replace the folder 'LayerSlider' in this path with the one you get from 2.)
+			</div>
+			<div class="content-section" id="master-slider" >
+				<h3>Master Slider</h3>
+				<div class="message-box">
+					<i class="icon-info-sign"></i>
+					<span class="content">The purchase code for slider is not necessary. It's used for auto updater. However, the slider that's included in this theme is being used as 'Extended license', it's considered as a bonus file which doesn't support auto updater. If you need to use auto updater, you have to purchase slider's regular license separately. However, as mentioned, It's not necessary, you can still use slider that come with the theme like its regular license.</span>
+				</div>	
+				Since "Master Slider" isn't included within the "Appearance > Install Plugins" tab, you need to follow the instruction below for the plugin installation.
+				<h5>Install Plugin</h5>
+				1.) In theme package folder, go to "Additional Plugins" folder and you will see the file in there.<br><br>
+				<img src="images/slider/slider-path.jpg" /><br><br>
+				2.) Go to "Plugin > Add New > Upload Plugins" and upload the file from 1.)<br><Br>
+				<img src="images/slider/add-new-plugin.jpg" width="950" /><br><br>
+				<h6>*Please note that we don't have any demo slides content with this slider. Demo slides content only come with Revolution Slider plugin. This plugin is considered as a bonus file.</h6>
+				<br/><br/>
+				<h5>Using Master Slider</h5>	
+				<a href="http://masterslider.com/doc/wp/" target="_blank">http://masterslider.com/doc/wp//</a><br/><br/>
+				<h5>Updating the Master Slider</h5>
+				1.) Download the newer version of theme package from Themeforest, extract it and go to folder 'Additional Plugins'<br><br>
+				2.) Extract the file 'masterslider-installable.zip' and now you will get the folder 'masterslider'. <br><br>
+				3.) Access to your site via FTP and go to the path 'wp-content/plugins' <br><br>
+				4.) Replace the folder 'masterslider' in this path with the one you get from 2.)
+			</div>
+			<div class="content-section" id="contact-form7" >
+				<h3>Contact Form 7</h3>
+				We provided the full layout as a default style for contact form 7 plugin.<br><br>
+				<img src="images/slider/contact-form7-default.jpg" /><br><br>
+				We also provide a snippet code if you want to add a layout and style to the form as well.<br><br>
+				<pre class="brush: xml;" >
+					<div class="gdlr-core-input-wrap gdlr-core-large gdlr-core-full-width gdlr-core-with-column gdlr-core-no-border" >
+						<div class="gdlr-core-column-30">[text* your-name placeholder "Full Name*"]</div>
+						<div class="gdlr-core-column-30">[email* your-email placeholder "Email*"]</div>
+						<div class="clear"></div>
+						<div class="gdlr-core-column-60">[text* your-subject placeholder "Subject*"]</div>
+						<div class="clear"></div>
+						<div class="gdlr-core-column-60">[textarea* your-message placeholder "Message*"]</div>
+						<div class="gdlr-core-column-60 gdlr-core-center-align">[submit class:gdlr-core-full "Submit Now"]</div>
+					</div>				
+				</pre>
+				Here's the explanation of what each class do<br><br>
+				<img src="images/slider/contact-form7-style.jpg" width="950" /><br><br>
+			</div>
+			<div class="content-section" id="translation" >
+				<h3>Translation & Localization</h3>
+				Translation is a wordpress function that helps you translate the theme's string or change the wording within the same language. <br><br>
+				<h6>Translate using Wordpress Plugins</h6>
+				<a href="http://support.goodlayers.com/document/translation-loco-translate-plugin/" target="_blank" >http://support.goodlayers.com/document/translation-loco-translate-plugin/</a>
+				<h6>Translate using PO EDIT Application</h6>
+				<a href="http://support.goodlayers.com/document/translation-po-edit/" target="_blank">http://support.goodlayers.com/document/translation-po-edit/</a>
+				<h6>Fully Compatible Multilingual Plugins</h6>
+				<ul>
+					<li><a href="http://wpml.org/" target="_blank" >WPML</a></li>
+					<li><a href="https://en-gb.wordpress.org/plugins/polylang/" target="_blank" >Poly Lang</a></li>
+				</ul>
+			</div>
+			
+			<!-- Short Code / Snippet Code -->
+			<div class="content-section" id="shortcode" >
+				<h3>Shortcodes</h3>
+				Shortcode is a simple set of functions that easily helps you create an element in the area that does not supported the page builder feature. You can easily find the shortcode list at the "Visual mode of wordpress WYSIWYG Editor" <br><br>
+				You can also see list and description of the shortcode attribute online <a href="http://support.goodlayers.com/document/shortcodes/" target="_blank">here</a>.<br><br>
+				<img src="images/shortcode/shortcode.jpg" /><br><br>
+				
+			</div>
+			<div class="content-section" id="snippet-code" >
+				<h3>Snippet Code</h3>
+				<strong>Footer 1</strong> : place this at text widget in "Appearance > Widget" area<br><br>
+				<img src="images/shortcode/footer-1.jpg" width="400" /><br><br>
+				<pre class="brush: xml;" >
+					<img src="http://demo.goodlayers.com/traveltour/wp-content/themes/traveltour/images/logo.png" alt=""/> 
+					[gdlr_core_space height="21px"]
+					Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+					[gdlr_core_space height="25px"]
+					<img src="http://demo.goodlayers.com/traveltour/wp-content/uploads/2017/01/award-1.png" alt="" width="140" style="margin-right: 25px;" />
+					<img src="http://demo.goodlayers.com/traveltour/wp-content/uploads/2017/01/award-2.png" alt="" width="65" />
+				</pre>			
+				
+				<strong>Footer 3</strong> : place this at text widget in "Appearance > Widget" area<br><br>
+				<img src="images/shortcode/footer-3.jpg" width="400" /><br><br>
+				<pre class="brush: xml;" >
+					Address : 12 Main Street Pt. London 
+					[gdlr_core_space height="-13px"]
+					Phone : +44 3656 4567 
+					[gdlr_core_space height="-13px"]
+					contact@traveltourtheme.com
+
+					[gdlr_core_space height="20px"]
+					[gdlr_core_icon icon="fa fa-facebook" size="18px" color="#ffffff" margin-left="" margin-right="20px" link="#" link-target="_blank"] [gdlr_core_icon icon="fa fa-twitter" size="18px" color="#ffffff" margin-left="" margin-right="20px" link="#" link-target="_blank"] [gdlr_core_icon icon="fa fa-linkedin" size="18px" color="#ffffff" margin-left="" margin-right="20px" link="#" link-target="_blank"] [gdlr_core_icon icon="fa fa-pinterest-p" size="18px" color="#ffffff" margin-left="" margin-right="20px" link="#" link-target="_blank"] [gdlr_core_icon icon="fa fa-vimeo" size="18px" color="#ffffff" margin-left="" margin-right="20px" link="#" link-target="_blank"] 
+				</pre>
+				
+				<strong>Widget List ( Single Tour )</strong> : place this at text widget in "Appearance > Widget" area<br><br>
+				<img src="images/shortcode/widget-list.jpg" width="400" /><br><br>
+				<pre class="brush: xml;" >
+					[gdlr_core_space height="-25px"]
+					[gdlr_widget_list title="Why Book With Us?" title-color="" background-color="" color="" border-color="" ]
+					<ul>
+					<li>[gdlr_core_icon icon="fa fa-dollar" size="15px" color="#ffa127" margin-right="13px" ]No-hassle best price guarantee</li>
+					<li>[gdlr_core_icon icon="fa fa-headphones" size="15px" color="#ffa127" margin-right="10px" ]Customer care available 24/7</li>
+					<li>[gdlr_core_icon icon="fa fa-star" size="15px" color="#ffa127" margin-right="10px" ]Hand-picked Tours & Activities</li>
+					<li>[gdlr_core_icon icon="fa fa-support" size="15px" color="#ffa127" margin-right="10px" ]Free Travel Insureance</li>
+					</ul>
+					[/gdlr_widget_list]
+				</pre>
+				
+				<strong>Widget Box ( Single Tour )</strong> : place this at text widget in "Appearance > Widget" area<br><br>
+				<img src="images/shortcode/widget-box-single.jpg" width="400" /><br><br>
+				<pre class="brush: xml;" >
+					[gdlr_core_space height="-20px"]
+					[gdlr_widget_box title="Get a Question?" title-color="#ffffff" background="http://demo.goodlayers.com/traveltour/wp-content/uploads/2017/01/widget-bg.jpg" color="#c9e2ff" ]
+					Do not hesitage to give us a call. We are an expert team and we are happy to talk to you.
+
+					[gdlr_core_icon icon="fa fa-phone" size="20px" color="#ffcf2a" margin-right="10px" ] <span style="font-size: 20px; color: #ffcf2a; font-weight: 600;">1.8445.3356.33</span>
+
+					[gdlr_core_icon icon="fa fa-envelope-o" size="17px" color="#ffcf2a" margin-right="10px" ] <span style="font-size: 14px; color: #fff; font-weight: 600;">Help@goodlayers.com</span>
+
+					[/gdlr_widget_box]
+				</pre>
+
+				<strong>Widget Box ( Payment Sidebar )</strong> : place this at text widget in "Appearance > Widget" area<br><br>
+				<img src="images/shortcode/widget-box-payment.jpg" width="400" /><br><br>
+				<pre class="brush: xml;" >
+					[gdlr_core_space height="-20px"]
+
+					[gdlr_widget_box title="Pay Safely With Us" title-color="#ffffff" background="#373737" left-icon="icon_lock_alt"]
+
+					<span style="font-size: 13px; color: #ffffff; ">The payment is encrypted and 
+					transmitted securely with an <strong>SSL 
+					protocol.</strong></span>
+
+					[gdlr_core_space height="25px"]
+
+					[/gdlr_widget_box]
+				</pre>
+			</div>
+			<div class="content-section" id="icon-list" >
+				<h3>Icon List</h3>
+				There're two icon types we included within our theme that's font awesome icons and elegant icons. You can see the icon class which you needed fill in shortcode or the "icon class" area here.<br><br>
+				<h6>Font Awesome Icons</h6>
+				<a href="http://support.goodlayers.com/document/icon-font-awesomes/" target="_blank" >http://support.goodlayers.com/document/icon-font-awesomes/</a>
+				<h6>Elegant Icons</h6>
+				<a href="http://support.goodlayers.com/document/icon-elegant-icons/" target="_blank">http://support.goodlayers.com/document/icon-elegant-icons/</a>
+			</div>
+			<div class="content-section" id="social-network-api" >
+				<h3>Social Network API</h3>
+				<h6>Obtaining Twitter Authentication Info</h6>
+				<a href="http://support.goodlayers.com/document/obtain-twitter-authentication-info/" target="_blank" >http://support.goodlayers.com/document/obtain-twitter-authentication-info/</a>
+				<h6>Register Your Site to Obtain Twitter Share Count</h6>
+				<a href="http://opensharecount.com/" target="_blank" >http://opensharecount.com/</a><br><br>
+				Since twitter deprecate the function to retrieve the share count number, you need to register your site with "<a href="http://opensharecount.com/" target="_blank" >http://opensharecount.com/</a>" in order to retrieve the twitter share count number in <strong>social network</strong> item.
+				<h6>Obtaining Instagram Access Token</h6>
+				<a href="http://support.goodlayers.com/document/obtain-instagram-access-token/" target="_blank" >http://support.goodlayers.com/document/obtain-instagram-access-token/</a>
+				<h6>Obtaining Facebook ID & Access Token</h6>
+				<a href="http://support.goodlayers.com/document/obtaining-facebook-id-access-token/" target="_blank" >http://support.goodlayers.com/document/obtaining-facebook-id-access-token/</a>
+				<h6>Finding your Youtube Channel ID</h6>
+				<a href="https://support.google.com/youtube/answer/3250431?hl=en" target="_blank" >https://support.google.com/youtube/answer/3250431?hl=en</a>
+			</div>
+			
+			<div class="content-section" id="setting-up-ssl" >
+				<h3>Setting Up SSL On Your Site</h3>
+				<h6>1. Go to Setting > General , in the WordPress Adress and Site Address field, fill 'https' in front of the url </h6>
+				<img src="images/etc/ssl-1.jpg" width="950" /><br><br>
+				<h6>2. Install & Activate the plugin "SSL Insecure Content Fixer"</h6>
+				<a href="https://wordpress.org/plugins/ssl-insecure-content-fixer/" target="_blank">https://wordpress.org/plugins/ssl-insecure-content-fixer/</a> This will fix the page builder when using with SSL.<br><br>
+				<h6>3. Make sure that all images url that put in site content and widget area are started with "https"</h6>
+				
+			</div>
+
+			<!-- Tourmaster -->
+			<div class="content-section" id="creating-tour" >
+				<h3>Creating Tour</h3>
+				<h5>1.) Create new tour.</h5>
+				Add new tour at the "Tour > Add New" section. Fill the title, category, tag as you want.<br><br>
+				<img src="images/tourmaster/creating-tour-1.jpg" width="950" /><br><br>
+				We also set the content in page builder as a default layout for you.<br><br>
+				<img src="images/tourmaster/creating-tour-2.jpg" width="950" /><br><br>
+				At the bottom of the page, you'll see the tour settings section. You can set the tour type/date/price at the "DATE & PRICE" tab.<br><br>
+				<img src="images/tourmaster/creating-tour-2-1.jpg" width="950" /><br><br>
+				You can set an extra tour information at "TOUR SETTINGS" tab<br><br>
+				<img src="images/tourmaster/creating-tour-2-2.jpg" width="950" /><br><br>
+				<h5>2.) Creating tour item ( list of tours ).</h5>
+				Create new page at "Page > Add New". At the page builder area, add the "Tour Item" then, publish the page.<br><br>
+				<img src="images/tourmaster/creating-tour-3.jpg" width="950" /><br><br>
+				<img src="images/tourmaster/creating-tour-4.jpg" width="950" /><br><br>
+				Double click or hover over the tour item to edit the tour item options.<br><br>
+				<img src="images/tourmaster/creating-tour-5.jpg" width="950" /><br><br>
+			</div>
+			<div class="content-section" id="creating-coupon" >
+				<h3>Creating Coupon</h3>
+				Add new coupon at the "Tour Coupon > Add New" section. Fill the title as anything you want.<br><br>
+				Fill the coupon code as anything ( lower than 20 character ) and set the discount price/date as you need.<br><br>
+				<img src="images/tourmaster/creating-coupon-1.jpg" width="950" /><br><br>
+			</div>
+			<div class="content-section" id="setup-the-payment" >
+				<h3>Setup The Payment</h3>
+				<h6>How The Payment Works</h6>
+				<a href="http://demo.goodlayers.com/traveltour/how-the-payment-works/" target="_blank" >http://demo.goodlayers.com/traveltour/how-the-payment-works/</a>
+				<h6>Setup The Payment Page</h6>
+				Go to "Tourmaster Plugin Option > General > Payment Page" to set up the payment template and sidebar. <br><br>
+				<img src="images/tourmaster/payment-1.jpg" width="950" /><br><br>
+				<h6>Setup The Payment Gateway</h6>
+				At the "Payment > Payment Settings Tab", select the payment method you want. You can learn more about how to obtain the payment API key in the next section. <br><br>
+				<img src="images/tourmaster/payment-2.jpg" width="950" /><br><br>
+			</div>
+			<div class="content-section" id="configuring-an-email-message" >
+				<h3>Configuring An Email Message</h3>
+				<h6>Setting Up E-mail</h6>
+				<div class="message-box">
+					<i class="icon-info-sign"></i>
+					<span class="content">Please note that the subscription email form is being used separately by the plugin "Newsletter". If you want to set up email subscription, you have to do via "Newsletter" plugin setting directly.</span>
+				</div>	
+				Go to "Tourmaster Plugin Option > General > E-Mail Settings" to fill all necessary E-mail settings. <br><br>
+				<img src="images/tourmaster/email-config-1.jpg" width="950" /><br><br>
+				<h6>E-mail Message Management</h6>
+				Go to "Admin Email Content" or "Customer Email Content" section to set the E-mail content. You will see that you can enable/disable the email message on different scenario.<br><br>
+				<img src="images/tourmaster/email-config-2.jpg" width="950" /><br><br>
+				<h6>Customize an E-mail Message</h6>
+				You can fill any html code to style an E-mail Message ( Not the title ). We also provided a custom shortcode for you to add necessary information regarding to the tour booking to your email as well.
+				<ul>
+					<li>Display Title : {title}YOUR_TITLE_GOES_HERE{/title}</li>
+					
+					<li>Customer Name : {customer-name}</li>
+					<li>Tour Name : {tour-name}</li>
+					<li>Order Number : {order-number}</li>
+					<li>Travel Date : {travel-date}</li>
+					<li>Total Price : {total-price}</li>
+					<li>Payment Method : {payment-method}</li>
+					<li>Payment Date : {payment-date}</li>
+					<li>Transaction ID : {transaction-id}</li>
+
+					<li>Profile Page URL : {profile-page-link}</li>
+					<li>Payment Page URL : {payment-link}</li>
+					<li>Invoice Page URL : {invoice-link}</li>
+					<li>Admin Transaction Page URL : {admin-transaction-link}</li>
+
+					<li>Divider Line : {divider}</li>
+					<li>Spaces : {spaces}</li>
+				</ul>
+				You can also mix our shortcode with html to create a link / bold text or anything you want as well. 
+				BTW, please noted that the some shortcode might not be available on some scenario. <br><br>
+				Eg. On registration process, only "{customer-name}" and "{profile-page-link}" is available.
+				Here's an example of email sent after the booking as been made.<br><br>
+				<pre class="brush: xml;" >
+					<strong>Dear {customer-name}</strong>,
+					You have made a booking on
+
+					{tour-name}
+					{order-number}
+					{travel-date}
+					{total-price}
+					<a href="{payment-link}" >Make a payment</a>
+					<a href="{invoice-link}" >View Invoice</a>
+					{divider}
+					If you wish to do the bank transfer. Please use the information below.
+
+					<strong>Bank name: Center London Bank</strong>
+					<strong>Account Number: 4455-4445-333</strong>
+					<strong>Swift Code: XXCCVV</strong>
+
+					After transferring, please submit payment receipt from your dashboard. We'll get back to you when the submission verified.
+				</pre>
+			</div>
+			<div class="content-section" id="payment-api" >
+				<h3>Payment API</h3>
+				<h6>Stripe Access Token</h6>
+				<a href="http://support.goodlayers.com/document/2017/02/01/obtaining-the-stripe-access-token/" target="_blank" >http://support.goodlayers.com/document/2017/02/01/obtaining-the-stripe-access-token/</a>
+				<h6>Authorize Access Token</h6>
+				<a href="http://support.goodlayers.com/document/2017/02/01/obtaining-the-authorize-access-token/" target="_blank" >http://support.goodlayers.com/document/2017/02/01/obtaining-the-authorize-access-token/</a>
+				<h6>Paymill Access Token</h6>
+				<a href="http://support.goodlayers.com/document/2017/02/01/obtaining-the-paymill-access-token/" target="_blank" >http://support.goodlayers.com/document/2017/02/01/obtaining-the-paymill-access-token/</a>
+			</div>
+			<div class="content-section" id="itinerary-map" >
+				<h3>Creating Itinerary Map</h3>
+				<br><br><iframe width="800" height="560" src="https://www.youtube.com/embed/rnlP7BygRj4" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="content-section" id="creating-destination" >
+				<h3>Creating Destination</h3>
+				<h6>1. Go to Tour > Tour Category, create a new category and assign thumbnail.</h6>
+				<img src="images/tourmaster/tour-destination.jpg" width="950" /><br><br>
+				<h6>2. Create new tours and assign them to the created category</h6>
+				<h6>3. Create a new page and use the page item "Tour Category". You can choose specific categories to show and select layout in page item setting.</h6>				
+				<img src="images/tourmaster/tour-destination-2.jpg" width="950" /><br><br>
+				<img src="images/tourmaster/tour-destination-3.jpg" width="950" /><br><br>
+				<img src="images/tourmaster/tour-destination-4.jpg" width="950" /><br><br>
+			</div>
+			<div class="content-section" id="creating-referral" >
+				<h3>Creating Referral Tour(link to external source)</h3>
+				This feature allow you to link the tour to other website(where you have your affiliation). You can put the specific url in tour setting. By using this feature, it will ignore all other tour attributes.<br/><br/>
+				<img src="images/tourmaster/tour-referral.jpg" width="950" /><br><br>
+			</div>
+			<div class="content-section" id="creating-login" >
+				<h3>Creating Login / Registration Page</h3>
+				<h6>1. Create two blank pages ("Login" page and "Register" page in this case.)</h6>
+				<img src="images/tourmaster/tour-login.jpg" width="950" /><br><br>
+				<h6>2. Go to Tour Master option > Template Setting and choose pages.</h6>
+				<img src="images/tourmaster/tour-login-2.jpg" width="950" /><br><br>
+			</div>
+			<div class="content-section" id="setting-tour-search-header" >
+				<h3>Setting up header in tour search result</h3>
+				<h6>1. Create two blank pages ("Login" page and "Register" page in this case.)</h6>
+				<img src="images/tourmaster/tour-search.jpg" width="950" /><br><br>
+				<h6>2. Go to Tour Master option > Search/Archive Pages and choose the page in "Search Page".</h6>
+				<img src="images/tourmaster/tour-search-2.jpg" width="950" /><br><br>
+			</div>
+			<div class="content-section" id="creating-review" >
+				<h3>How create customer's review manually?</h3>
+				<h6>1. Make sure that you finished "Creating Tour" section already.</h6>
+				<h6>2. Create a new account as customer</h6> You may do this by using another browser so you can be online as admin and customer at the same time.<br><br>
+				<h6>3. Use customer account to perform booking on the tour</h6> At the end of process, select "Book and pay later" button.<br><br>
+				<h6>4. Go to admin backend (transaction page)</h6> Choose the recent booking and change its status to 'Departed'.<br><br>
+				<img src="images/tourmaster/tour-review.jpg" width="950" /><br><br>
+				<h6>5. Back to customer account</h6>Go to customer dashboard, click on the menu "Review" on the left then submit a review.
+				
+			</div>
+			<div class="content-section" id="total-cache" >
+				<h3>If you're using W3 Total Cache plugin, make sure that you have these settings.</h3><br/><br/>
+				<h6>1. In the "Browser Cache" setting, in the "HTML & XML" section, make sure that "Set expires header" is unchecked.</h6>
+				<h6>2. If you're using CDN, go to "CDN" setting, scroll down to the bottom and add this rule in the "Reject Files" box</h6>
+				<pre class="brush: xml;" >
+				{plugins_dir}/tourmaster/
+				</pre>
+			</div>
+		</div>
+	</div> <!-- body-wrapper -->
+	<script type="text/javascript" src="plugins/jquery.js"></script>
+	<script type="text/javascript" src="plugins/fancybox/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="plugins/syntaxhighlighter/shCore.js"></script>
+	<script type="text/javascript" src="plugins/syntaxhighlighter/shBrushXml.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript"> SyntaxHighlighter.all() </script>
+</body>
+</html>
