@@ -26,13 +26,25 @@
         
         <div class="copyright-wrapper">
         	<div class="container">
-            	<div class="copyright-txt">
-				<?php bloginfo('name'); ?> <?php _e('All Rights Reserved', 'prevalent');?>                
-                </div>
-                <div class="design-by">
-                    <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'prevalent' ) ); ?>">
-				   <?php printf( __( 'Proudly powered by %s', 'prevalent' ), 'WordPress' ); ?></a>
-                </div>
+              <div class="copyright-txt-bottom">
+                  <div class="address-wrapper">
+                      <div class="address-text">
+                          <h3 class="office"> Main Branch </h3>
+                          <p>162-rogan gran<br>
+                              Delhi gate<br>
+                              Ghaziabad – 201002<br>
+                              Mob :<a href="tel:9810494888"> 9810494888</a></p>
+                      </div>  
+                      <div class="address-text">
+                          <h3 class="office"> Home Branch </h3>
+                          <p>K.M - 25 Kavi Nagar<br>
+                              Ghaziabad - 201002<br>
+                              Mob :<a href="tel:9810494888"> 9810494888</a></p> 
+
+                      </div>
+                  </div>
+                  
+              </div>
                 <div class="clear"></div>
             </div>
             

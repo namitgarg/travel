@@ -132,8 +132,10 @@ h2.section-title {color:#454545; font:300 36px/40px 'Montserrat',san-serif; text
 .welcomewrap p{ margin-bottom:30px;}
 .welcomewrap h2{  margin-bottom:20px; font-size:38px; border-bottom:2px solid #dddddd; padding-bottom:10px; text-align:center; display:inline-block;}
 
-#section-3{ padding:40px 0; text-align:center;}
+#section-3{ padding:40px 0;}
+.whyuswrap h2{ text-align: center}
 .whyuswrap p{ margin-bottom:25px;}
+.whyuswrap ul{ -webkit-columns: 2; -moz-columns: 2; columns: 2;list-style:inside;padding-left:15%;}
 .whypagethumb{ width:25%; float:left; margin:0 30px 20px 0;}
 
 /* = social icons css
@@ -250,3 +252,7 @@ nav#nav-below{ margin-top:15px;}
 body.wp-custom-logo .logo h1{display:none;}
 .textwidget select{ width:100%;}
 table{ width:100%}
+
+
+/*================== footer text ==========*/
+.copyright-txt-bottom{margin: 2% 0px 0px 25%;line-height: 1.5}

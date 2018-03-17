@@ -201,10 +201,7 @@
                                  <div class="whypagethumb"><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_post_thumbnail();?></a></div>
                             <?php } ?>                          
                            <h2><?php the_title(); ?></h2>
-                          <p><?php echo wp_trim_words( get_the_content(), 70, '...' );  ?></p>  
-                          <a class="ReadMore" href="<?php echo esc_url( get_permalink() ); ?>">                                      
-                                     <?php _e('Read More','prevalent'); ?>
-                                    </a>            
+                          <?php echo wp_trim_words( the_content(), 70, '...' );  ?>        
                           <div class="clear"></div>
 					<?php endwhile; 
                     wp_reset_postdata();
